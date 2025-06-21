@@ -25,3 +25,9 @@ int main()
 
     return 0;
 }
+
+// Total time complexity: O(n) + O(q * (r - l + 1)) = O(n + q * (r - l + 1))
+// If we assume that the maximum value of (r - l + 1) is m, then the time complexity can be simplified to O(n + q * m).
+// time limit per test1.5 seconds
+// So if n = 10^5, q = 10^5, and m = 10^5, the maximum time complexity would be O(10^5 + 10^5 * 10^5) = O(10^5 + 10^10) = O(10^10).
+// it's TLE error
