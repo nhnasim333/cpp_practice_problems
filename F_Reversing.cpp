@@ -11,7 +11,7 @@ int main()
         cin >> arr[i];
     }
     reverse(arr.begin(), arr.end()); // ----> O(n)
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)      // ----> O(n)
     {
         cout << arr[i] << " ";
     }
