@@ -25,7 +25,7 @@ This repository contains solutions to over 200+ problems from [Codeforces](https
 
 ## 🏆 Topics Covered
 
-- Algorithms (Sorting, Searching, Dynamic Programming, Greedy, etc.)
+- Algorithms (Sorting, Searching, etc.)
 - Data Structures (Arrays, Strings, Trees, Graphs, Maps, Sets, etc.)
 - Mathematics and Number Theory
 - Bit Manipulation
