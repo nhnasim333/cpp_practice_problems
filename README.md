@@ -2,7 +2,7 @@
 
 Welcome to the **C++ Practice Problems** repository! 🎯
 
-This repository contains solutions to over 200+ problems from [Codeforces](https://codeforces.com/), all implemented in C++. The aim is to help learners and competitive programmers by providing clear, well-organized code examples and easy navigation.
+This repository contains solutions to over 300+ problems from [Codeforces](https://codeforces.com/), all implemented in C++. The aim is to help learners and competitive programmers by providing clear, well-organized code examples and easy navigation.
 
 ## 📂 Repository Structure
 
