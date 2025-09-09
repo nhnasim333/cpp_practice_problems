@@ -12,7 +12,7 @@ This repository contains solutions to over 300+ problems from [Codeforces](https
 
 ## 🚀 Features
 
-- **200+ Codeforces Problems:** Challenging problems with efficient C++ solutions.
+- **300+ Codeforces Problems:** Challenging problems with efficient C++ solutions.
 - **Well-Structured Code:** Readable, commented, and follows best practices.
 - **Learning Resource:** Ideal for beginners and intermediate programmers to study different problem-solving techniques.
 - **Continuous Updates:** More problems and solutions will be added regularly.
