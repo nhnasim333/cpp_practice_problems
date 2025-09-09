@@ -11,20 +11,15 @@ int main()
         cin >> n >> m;
         string s;
         cin >> s;
-        vector<int> cnt(7, 0);
+        int freq[7] = {0};
         for (char c : s)
-        {
-            cnt[c - 'A']++;
-        }
-        int need = 0;
+            freq[c - 'A']++;
+
+        int cnt = 0;
         for (int i = 0; i < 7; i++)
-        {
-            if (cnt[i] < m)
-            {
-                need += m - cnt[i];
-            }
-        }
-        cout << need << endl;
+            if (freq[i] < m)
+                cnt += m - freq[i];
+        cout << cnt << endl;
     }
     return 0;
 }
