@@ -1,24 +1,45 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
 
-ll count_polycarp_likes(ll n)
+long long kth_root_floor(long long n, int k, long long r_init)
 {
-    ll squares = (ll)sqrt(n);
-    ll cubes = (ll)cbrt(n);
-    ll sixths = (ll)pow(n, 1.0 / 6.0);
-    return squares + cubes - sixths;
+    long long l = 0, r = r_init, ans = 0;
+    while (l <= r)
+    {
+        long long m = (l + r) >> 1;
+        __int128 p = 1;
+        for (int i = 0; i < k; ++i)
+        {
+            p *= m;
+            if (p > n)
+                break;
+        }
+        if (p <= n)
+        {
+            ans = m;
+            l = m + 1;
+        }
+        else
+            r = m - 1;
+    }
+    return ans;
 }
 
 int main()
 {
     int t;
-    cin >> t;
+    if (!(cin >> t))
+        return 0;
     while (t--)
     {
-        ll n;
+        long long n;
         cin >> n;
-        cout << count_polycarp_likes(n) << endl;
+
+        long long sq = kth_root_floor(n, 2, 1000000);
+        long long cb = kth_root_floor(n, 3, 100000);
+        long long sixth = kth_root_floor(n, 6, 10000);
+
+        cout << (sq + cb - sixth) << endl;
     }
     return 0;
 }
