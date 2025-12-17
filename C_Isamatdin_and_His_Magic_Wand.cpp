@@ -5,8 +5,8 @@ int main()
 {
 
     int t;
-    if (!(cin >> t))
-        return 0;
+    cin >> t;
+
     while (t--)
     {
         int n;
