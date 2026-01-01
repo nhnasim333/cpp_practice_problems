@@ -32,7 +32,7 @@ int main()
             if (i < n)
                 cout << " ";
         }
-        cout << "\n";
+        cout << endl;
     }
 
     return 0;
