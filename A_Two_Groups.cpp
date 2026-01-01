@@ -30,10 +30,8 @@ int main()
             {
                 sum_negative += a[i];
             }
-            // zeros don't affect the result, can go anywhere
         }
 
-        // Maximum difference is when we separate positives and negatives
         long long result = abs(sum_positive) - abs(sum_negative);
         result = abs(result);
 
