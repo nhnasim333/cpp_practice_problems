@@ -11,26 +11,10 @@ int main()
         int n;
         cin >> n;
 
-        vector<int> p(n + 1);
-
-        for (int i = 1; i <= n; i += 2)
+        cout << n;
+        for (int i = 1; i < n; i++)
         {
-            if (i + 1 <= n)
-            {
-                p[i] = i + 1;
-                p[i + 1] = i;
-            }
-            else
-            {
-                p[i] = i;
-            }
-        }
-
-        for (int i = 1; i <= n; i++)
-        {
-            cout << p[i];
-            if (i < n)
-                cout << " ";
+            cout << " " << i;
         }
         cout << endl;
     }
