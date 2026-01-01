@@ -1,16 +1,39 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-    if (n % 2 != 0) {
-        cout << -1 << endl;
-    } else {
-        for (int i = 1; i <= n; i += 2) {
-            cout << i + 1 << " " << i << " ";
+int main()
+{
+    int t;
+    cin >> t;
+
+    while (t--)
+    {
+        int n;
+        cin >> n;
+
+        vector<int> p(n + 1);
+
+        for (int i = 1; i <= n; i += 2)
+        {
+            if (i + 1 <= n)
+            {
+                p[i] = i + 1;
+                p[i + 1] = i;
+            }
+            else
+            {
+                p[i] = i;
+            }
         }
-        cout << endl;
+
+        for (int i = 1; i <= n; i++)
+        {
+            cout << p[i];
+            if (i < n)
+                cout << " ";
+        }
+        cout << "\n";
     }
+
     return 0;
 }
